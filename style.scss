@@ -1,0 +1,163 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f9f9f9;
+
+$font-size-base: 16px;
+$font-size-large: 24px;
+
+body {
+  font-size: $font-size-base;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+h1 {
+  font-size: $font-size-large;
+  color: $primary-color;
+}
+
+.navbar {
+  background-color: $primary-color;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+$breakpoint-small: 600px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: $breakpoint-small) { @content; }
+  } @else if $breakpoint == medium {
+    @media (max-width: $breakpoint-medium) { @content; }
+  } @else if $breakpoint == large {
+    @media (max-width: $breakpoint-large) { @content; }
+  }
+}
+
+.container {
+  padding: 20px;
+  
+  @include respond-to(small) {
+    padding: 10px;
+  }
+
+  @include respond-to(medium) {
+    padding: 15px;
+  }
+}
+
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  @include rounded(10px);
+
+  @include respond-to(small) {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-element {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.scale-on-hover {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    animation: scaleUp 0.3s forwards;
+  }
+}
+
+.transition-color {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: black;
+  }
+}
+
+// Definir la animación para cambiar el color a rojo
+@keyframes changeToRed {
+  from {
+    color: initial;  // Mantén el color inicial
+  }
+  to {
+    color: red;      // Cambia a rojo
+  }
+}
+
+// Estilo para los enlaces
+a {
+  text-decoration: none;
+  color: black;  // Color por defecto
+
+  &:hover {
+    color: blue;  // Cambia de color al pasar el mouse
+  }
+
+  &:active {
+    animation: changeToRed 0.3s forwards;  // Animación al hacer clic
+  }
+}
