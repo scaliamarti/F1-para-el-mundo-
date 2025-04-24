@@ -1,10 +1,52 @@
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 24 \2502    animation-duration: 4s;\a    \2502                           ^\a    \2575 \a   style.scss 24:26  root stylesheet';
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
+
+h1 {
+    color:rgb(87, 83, 82);
+    
+}
+
+p {
+    
+    font-size:medium;
+}
+
+h2{
+    color:rgb(95, 92, 91);
+}
+
+article {
+    margin-top: 10px;
+}
+
+article h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e94b1f;
+    color: rgb(40, 33, 33);
+    font-size: 1rem;
+}
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+section h2 {
+    color: #7d1c02; 
+}
+
+section article h3 {
+    color: #2c0e73;  
+}
+
+

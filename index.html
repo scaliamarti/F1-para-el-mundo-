@@ -1,146 +1,112 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título optimizado -->
-    <title>Fórmula 1 Latinoamérica - Noticias, Pilotos y Escuderías</title>
-    
-    <!-- Descripción meta -->
-    <meta name="description" content="Encuentra las últimas noticias, pilotos destacados, escuderías y todo lo que necesitas saber sobre la Fórmula 1 en Latinoamérica.">
-    
-    <!-- Palabras clave -->
-    <meta name="keywords" content="Fórmula 1, F1, noticias F1, pilotos F1, escuderías F1, Franco Colapinto, Red Bull Racing, Alpine F1">
-    
-    <!-- Autor -->
-    <meta name="author" content="F1 Para el Mundo">
-    
-    <!-- Open Graph para redes sociales -->
-    <meta property="og:title" content="Fórmula 1 Latinoamérica - Noticias, Pilotos y Escuderías">
-    <meta property="og:description" content="Descubre todo lo relacionado con la Fórmula 1 en Latinoamérica, desde noticias hasta biografías de los pilotos más importantes.">
-    <meta property="og:image" content="https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg">
-    <meta property="og:url" content="https://tu-sitio.com">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Fórmula 1 Latinoamérica - Noticias, Pilotos y Escuderías">
-    <meta name="twitter:description" content="La mejor información sobre Fórmula 1 en Latinoamérica, con noticias, estadísticas y mucho más.">
-    <meta name="twitter:image" content="https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg">
-
-    <!-- Enlace a la hoja de estilos CSS -->
+    <title>F1 Para el mundo</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-danger text-white text-center py-3">
-        <h1>FÓRMULA 1 LATINOAMÉRICA</h1>
-    </header>
+    <header> 
+<H1>FÓRMULA 1 LATINOAMÉRICA</H1>
+</header>
+
+        
 
     <!-- Menú de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">F1 Latinoamérica</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pilotos.html">Pilotos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="escuderías.html">Escuderías</a></li>
-                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pilotos.html">Pilotos</a></li>
+            <li><a href="escuderías.html">Escuderías</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            
+        </ul>
     </nav>
 
-    <main class="container my-4">
-        
-        <section class="mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Pilotos destacados latinoamericanos: Franco Colapinto</h2>
-                    <p class="card-text">Biografía, estadísticas y trayectoria del piloto argentino...</p>
-                    <button class="bounce btn btn-primary">Más información</button>
-                </div>
-            </div>
+    <main>
+        <section>
+            <h2>Pilotos destacados latinoamericanos: Franco Colapinto</h2>
+            <p>Biografía, estadísticas y trayectoria del piloto argentino...</p>
         </section>
-
-        
-        <section class="mb-4">
-            <h2>Noticias exclusivas: La llegada de Colapinto a Alpine</h2>
-            <p>El piloto argentino Franco Colapinto ha confirmado su incorporación a Alpine F1 Team para la temporada 2025...</p>
-        </section>
-
-        
-        <section class="mb-4">
-            <h2>Escuderías de la F1</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Red Bull Racing</h3>
-                    <p>La escudería de Fórmula 1 más exitosa de los últimos años, conocida por su dominio en la pista...</p>
-                </div>
-            </div>
-        </section>
-
-       
-        <figure class="text-center">
-            <img class="img-fluid" src="https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg" alt="Logo oficial del Gran Premio de Abu Dhabi 2017 de Fórmula 1">
-            <figcaption>Imagen oficial del Gran Premio de Abu Dhabi 2017.</figcaption>
-        </figure>
-        
-        
-        <section class="mb-4">
-            <h2>Formulario de contacto</h2>
-            <div class="row">
-                <div class="col-md-8 col-lg-6 mx-auto">
-                    <form action="/enviar-formulario" method="POST">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" class="form-control" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
    
-    <footer class="bg-dark text-white text-center py-3">
+
+    <section>¡Enterate todo lo que tenes que saber de Formula 1 y disfruta este ciclo 2025 en nuestra web latinoamericana! Información exclusiva de tus pilotos favoritos
+    </article>
+            <h2>Noticias exclusivas: La llegada de Colapinto a Alpine</h2>
+            <p>El piloto argentino Franco Colapinto ha confirmado su incorporación a Alpine F1 Team para la temporada 2025, lo que marca un hito importante en su carrera. Con una sólida trayectoria en categorías inferiores, Colapinto está listo para dar el salto a la Fórmula 1 y representar a la escudería francesa.</p><article>
+        
+            </section>
+            <main>
+                <section>
+                    <h2>Escuderías de la F1</h2>
+                    <p>Descubre todo sobre las escuderías que compiten en la Fórmula 1.</p>
+                    <article>
+                        <h3><strong>Red Bull Racing <strong></h3>
+                        <p>La escudería de Fórmula 1 más exitosa de los últimos años, conocida por su dominio en la pista y su tecnología innovadora...</p>
+                    </article>
+                </section>
+            </main>
+
+    <p>Accede a nuestro <strong>calendario</strong>, y a toda la información necesaria:  </p>
+    <nav>
+    <a href="https://www.espn.com.ar/deporte-motor/f1/calendario">Ir al calendario</a>
+
+<nav>
+    <section>
+
+        <section>
+    
+       <h2>Resultados F1 2025</h2>
+       <h3>Gran Premio de Bahrein</h3>
+            <ul>
+                <li>1er Lugar: Max Verstappen (Red Bull)</li>
+                <li>2do Lugar: Lewis Hamilton (Mercedes)</li>
+                <li>3er Lugar: Charles Leclerc (Ferrari)</li>
+            </ul>
+        </section>
+
+
+    <section>
+        <h2>Calendario F1 2025</h2>
+  
+    
+            <ul>
+                <li>Gran Premio de Australia - 21 de Marzo</li>
+                <li>Gran Premio de España - 15 de Mayo</li>
+                
+            </ul>
+       
+            <figure>
+         <img src="https://cdn-1.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614917.jpg" alt="Logo de Formula 1">
+        <figcaption>Imagen oficial del Gran Premio de Abu Dhabi 2017.</figcaption>
+</figure>
+<section>
+
+<section>
+<form action="/enviar-formulario" method="POST"> 
+        <p>FORMULARIO DE CONTACTO:
+            
+        Para suscribirte y recibir todas las noticias, dejanos tus datos:</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+<section>
+ <main>
+    <footer>
         <p>&copy; 2025 F1 Para el Mundo. Todos los derechos reservados.</p>
-    </footer>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "F1 Para el Mundo",
-      "url": "https://tu-sitio.com",
-      "description": "Encuentra las últimas noticias, pilotos destacados, escuderías y todo lo que necesitas saber sobre la Fórmula 1 en Latinoamérica.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "F1 Para el Mundo"
-      }
-    }
-    </script>
+        </footer>
 </body>
 </html>
+
+
 
 
